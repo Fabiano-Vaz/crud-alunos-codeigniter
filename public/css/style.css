@@ -1,0 +1,20 @@
+body {
+  background: #f8f8f8;
+}
+td {
+  width: 35px;
+  height: 35px;
+  border-radius: 3px;
+}
+.jumbotron {
+  background-color: #2d3339;
+  color: #c9c6c6;
+  border-radius: 0px 0px 4px 4px;
+}
+.inf-content{
+  border:1px solid #DDDDDD;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+}			                                                      
