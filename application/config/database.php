@@ -70,10 +70,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'database',
+	'hostname' => 'sql106.epizy.com',
+	'username' => 'epiz_30951158',
+	'password' => 'cbVLSMPexjmruyW',
+	'database' => 'epiz_30951158_database',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

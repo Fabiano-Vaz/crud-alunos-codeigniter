@@ -9,10 +9,10 @@
         </li>
         <li class="nav-item">
           <a class="nav-link px-2 text-muted" href="#" data-toggle="modal" data-target="#user-form-modal">
-            <i class="fas fa-user-plus mr-1"></i><span>Novo Usuário</span></a>
+            <i class="fas fa-user-plus mr-1"></i><span>NOVO</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-2 text-muted" href="#?"><i class="fa fa-fw fa-cog mr-1"></i><span>Config</span></a>
+          <a class="nav-link px-2 text-muted" href="#?"><i class="fa fa-fw fa-cog mr-1"></i><span>CONFIG</span></a>
         </li>
       </ul>
     </div>
