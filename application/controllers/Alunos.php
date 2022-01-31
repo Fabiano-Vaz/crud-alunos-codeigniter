@@ -65,7 +65,7 @@ class Alunos extends CI_Controller
 			$this->load->model("alunos_model");
 			$this->alunos_model->salva($aluno);
 			$this->session->set_flashdata("success", "Aluno Cadastrado com sucesso");
-			redirect(uri: "/");
+			redirect("/");
 
 		} else {
 			$this->load->view("includes/header");
