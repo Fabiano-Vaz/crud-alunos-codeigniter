@@ -10,6 +10,8 @@ td {
   background-color: #2d3339;
   color: #c9c6c6;
   border-radius: 0px 0px 4px 4px;
+  height: 12rem;
+  padding: 1rem;
 }
 .inf-content{
   border:1px solid #DDDDDD;
