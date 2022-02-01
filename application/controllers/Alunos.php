@@ -78,6 +78,7 @@ class Alunos extends CI_Controller
 	{
 		$this->load->model("alunos_model");
 
+		$this->alunos_model->salvar($id);
 		$this->session->set_flashdata("success", "Aluno Alterado!");
 		redirect('/');
 	}
