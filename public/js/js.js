@@ -16,6 +16,7 @@ $(".dropify").dropify({
   },
 });
 
+// Carregar base64 em um input hidden para o post
 $("#foto_url").blur(function() {
-  $("#foto_base64").val($('.dropify-render img').attr('src'));
+  if ($('.dropify-render img').attr('src')) $("#foto_base64").val($('.dropify-render img').attr('src'));
 });

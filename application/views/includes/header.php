@@ -22,7 +22,7 @@
   <!-- lightbox -->
   <link rel="stylesheet" href="<?=base_url()?>public/plugins/lightbox/css/lightbox.css" />
   
-  <!-- CSS -->
+  <!-- CSS PERSONALIZADO -->
   <link href="<?= base_url() ?>public/css/style.css?v12" rel="stylesheet" />
   
 

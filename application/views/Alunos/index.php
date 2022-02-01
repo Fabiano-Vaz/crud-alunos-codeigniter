@@ -37,19 +37,25 @@
                   <?php
                   foreach ($alunos as $aluno) { ?>
                     <tr class="tr_aluno">
+                      <!-- Id do aluno -->
                       <td class="align-middle text-center">
                         <div class="bg-light d-inline-flex justify-content-center align-items-center align-top"></div>
                         <label class="text-muted"><?= $aluno['id'] ?></label>
                       </td>
+                      <!-- foto do aluno -->
                       <td class="align-middle text-center">
                         <a class="image-link" href="<?= $aluno['foto_base64'] ?>" data-lightbox="<?= $aluno['id'] ?>">
                           <img class="shadow rounded-circle" width="60px" src="<?= $aluno['foto_base64'] ?>" />
                         </a>
                       </td>
+                      <!-- Nome -->
                       <td class="text-nowrap align-middle"><?= $aluno['nome'] ?></td>
+
+                      <!-- Endereco -->
                       <td class="text-nowrap align-middle"><?= $aluno['endereco'] ?></td>
                       <td class="text-center align-middle">
                         <div class="btn-group align-top">
+                          <!-- Botões de controle -->
                           <?= anchor("Alunos/detalhe?id=" . $aluno['id'], "Detalhes", array("class" => "btn btn-sm btn-outline-secondary badge")); ?>
                           <a href="<?= base_url() ?>alunos/delete/<?= $aluno['id'] ?>" class="btn btn-sm btn-outline-secondary badge text-muted" type="button"><i class="fa fa-trash"></i></a>
                         </div>
@@ -62,6 +68,7 @@
 
 
                 </tbody>
+                <!-- fim da tabela -->
               </table>
             </div>
           </div>
