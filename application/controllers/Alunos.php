@@ -10,7 +10,6 @@ class Alunos extends CI_Controller
 		$lista = $this->Alunos_model->buscaTodos();
 		$dados = array("alunos" => $lista);
 		$id = $this->input->get("id");
-
 		$this->load->view("includes/header");
 		$this->load->view("includes/nav-top");
 		$this->load->view("Alunos/index", $dados);
@@ -24,24 +23,13 @@ class Alunos extends CI_Controller
 		$this->load->model("alunos_model");
 		$aluno = $this->alunos_model->retorna($id);
 		$dados = array("aluno" => $aluno);
-
 		$this->load->view("includes/header");
 		$this->load->view("includes/nav-top");
 		$this->load->view("Alunos/detalhe", $dados);
-		$this->load->view("Modais/editAluno");
+		$this->load->view("Modais/editAluno");		
 		$this->load->view("includes/footer");
 		$this->load->view("includes/js");
 
-	}
-
-	public function formulario()
-	{
-
-		$this->load->view("includes/header");
-		$this->load->view("includes/nav-top");
-		$this->load->view("alunos/formulario");
-		$this->load->view("includes/footer");
-		$this->load->view("includes/js");
 	}
 
 	public function novo()
@@ -49,7 +37,7 @@ class Alunos extends CI_Controller
 		$this->load->library('form_validation');
 		$this->form_validation->set_rules("nome", "nome", "required|min_length[4]");
 		$this->form_validation->set_rules("endereco", "endereco", "required");
-		$this->form_validation->set_rules("foto_base64", "foto_base64", "required");
+	    $this->form_validation->set_rules("foto_base64", "foto_base64", "required");
 		$this->form_validation->set_error_delimiters("<p class='alert alert-danger'>","</p>");
 
 		$sucesso = $this->form_validation->run();
@@ -68,11 +56,8 @@ class Alunos extends CI_Controller
 			redirect("/");
 
 		} else {
-			$this->load->view("includes/header");
-			$this->load->view("includes/nav-top");
-			$this->load->view("alunos/formulario");
-			$this->load->view("includes/footer");
-			$this->load->view("includes/js");
+			$this->session->set_flashdata("danger", "Aluno não cadastrado, verifique os campos e tente novamente!");
+			redirect("/");
 		}
 	}
 

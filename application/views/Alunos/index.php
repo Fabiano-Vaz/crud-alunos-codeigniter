@@ -16,10 +16,10 @@
           </div>
           <div class="e-table">
             <div class="table-responsive table-lg mt-3">
-              <table class="table table-bordered">
+              <table class="table table-bordered table_aluno mb-5">
                 <thead>
 
-                <!-- Cabeçalio da Tabela -->
+                  <!-- Cabeçalio da Tabela -->
                   <tr>
                     <th class="text-center">
                       <label class="text-muted">*</label>
@@ -33,23 +33,25 @@
                 <tbody>
 
 
-                <!-- Loop de rows da tabela -->
+                  <!-- Loop de rows da tabela -->
                   <?php
                   foreach ($alunos as $aluno) { ?>
-                    <tr>
+                    <tr class="tr_aluno">
                       <td class="align-middle text-center">
                         <div class="bg-light d-inline-flex justify-content-center align-items-center align-top"></div>
-                        <label class="text-muted"><?= $aluno['id']?></label>
+                        <label class="text-muted"><?= $aluno['id'] ?></label>
                       </td>
                       <td class="align-middle text-center">
-                        <img class="shadow rounded-circle" width="60px" src="<?= $aluno['foto_base64'] ?>" />
+                        <a class="image-link" href="<?= $aluno['foto_base64'] ?>" data-lightbox="<?= $aluno['id'] ?>">
+                          <img class="shadow rounded-circle" width="60px" src="<?= $aluno['foto_base64'] ?>" />
+                        </a>
                       </td>
                       <td class="text-nowrap align-middle"><?= $aluno['nome'] ?></td>
                       <td class="text-nowrap align-middle"><?= $aluno['endereco'] ?></td>
                       <td class="text-center align-middle">
                         <div class="btn-group align-top">
-                          <?= anchor("Alunos/detalhe?id=".$aluno['id'], "Detalhes", array("class" => "btn btn-sm btn-outline-secondary badge")); ?>
-                          <button class="btn btn-sm btn-outline-secondary badge" type="button"><i class="fa fa-trash"></i></button>
+                          <?= anchor("Alunos/detalhe?id=" . $aluno['id'], "Detalhes", array("class" => "btn btn-sm btn-outline-secondary badge")); ?>
+                          <a href="<?= base_url() ?>alunos/delete/<?= $aluno['id'] ?>" class="btn btn-sm btn-outline-secondary badge text-muted" type="button"><i class="fa fa-trash"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -61,13 +63,6 @@
 
                 </tbody>
               </table>
-            </div>
-            <div class="d-flex justify-content-center">
-              <ul class="pagination mt-3 mb-0">
-                <li class="disabled page-item"><a href="#" class="page-link">‹</a></li>
-                <li class="active page-item"><a href="#" class="page-link">1</a></li>
-                <li class="page-item"><a href="#" class="page-link">›</a></li>
-              </ul>
             </div>
           </div>
         </div>

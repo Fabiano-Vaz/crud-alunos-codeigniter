@@ -13,8 +13,18 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+  <!-- PAGING JS -->
+  <link rel="stylesheet" href="<?=base_url()?>public/plugins/jquery-paginate/jquery.paginate.css">
+
+  <!-- dropify -->
+  <link rel="stylesheet" type="text/css" href="https://jeremyfagis.github.io/dropify/dist/css/dropify.min.css">
+  
+  <!-- lightbox -->
+  <link rel="stylesheet" href="<?=base_url()?>public/plugins/lightbox/css/lightbox.css" />
+  
   <!-- CSS -->
-  <link href="<?= base_url() ?>public/css/style.css" rel="stylesheet" />
+  <link href="<?= base_url() ?>public/css/style.css?v12" rel="stylesheet" />
+  
 
 </head>
 
@@ -26,10 +36,8 @@
     </div>
   </div>
   <div class="container">
-    <div class="row flex-lg-nowrap">
 
-
-      <?php
+  <?php
       if ($this->session->flashdata('success')) { ?>
         <p class="alert alert-success">
           <?= $this->session->flashdata('success') ?>
@@ -41,3 +49,7 @@
         </p>
       <?php
       }
+      ?>
+    <div class="row flex-lg-nowrap">
+
+
