@@ -12,7 +12,7 @@
       <div class="modal-body">
         <div class="py-1">
           <!-- inicio do FORM -->
-          <form action="<?= base_url() ?>Alunos/salvar/<?=$aluno['id']?>" class="form" method="post">
+          <form action="<?= base_url() ?>alunos/salvar/<?=$aluno['id']?>" class="form" method="post">
 
           <!-- input hiddens de ID e base64 para enviar de forma oculta para o model -->
           <input hidden class="form-control" type="text" name="id" id="id" value="<?=$aluno['id']?>" />
@@ -24,7 +24,7 @@
                 <div class="row">
                   <div class="col">
                     <!-- url da foto de perfil -->
-                    <input name="foto_url" id="foto_url" type="file" class="dropify" data-height="100" data-allowed-file-extensions="jpg jpeg"  />
+                    <input name="foto_url" id="foto_url" accept="image/jpeg" type="file" class="dropify" data-height="100" data-allowed-file-extensions="jpg jpeg"  />
                   </div>
                 </div>
               </div>
