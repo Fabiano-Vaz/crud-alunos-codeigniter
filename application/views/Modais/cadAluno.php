@@ -15,9 +15,10 @@
                 <div class="mb-2">Foto de Perfil</div>
                 <div class="row">
                   <div class="col">
-                    <input name="foto_base64" type="file" class="dropify" data-height="100" data-allowed-file-extensions="jpg jpeg" />
+                    <input name="foto_url" id="foto_url" type="file" class="dropify" data-height="100" data-allowed-file-extensions="jpg jpeg" />
                   </div>
                 </div>
+                <input hidden class="form-control" type="text" name="foto_base64" id="foto_base64" value="" />
               </div>
               <div class="col-12 col-sm-8 mb-3">
                 <div class="row">
@@ -32,12 +33,12 @@
 
             </div>
             <div class="row mt-3">
-                  <div class="col">
-                    <div class="form-group">
-                      <label>Endereco</label>
-                      <textarea class="form-control" type="text" name="endereco" placeholder="Endereço" value=""></textarea>
-                    </div>
-                  </div>
+              <div class="col">
+                <div class="form-group">
+                  <label>Endereco</label>
+                  <textarea class="form-control" type="text" name="endereco" placeholder="Endereço" value=""></textarea>
+                </div>
+              </div>
             </div>
 
             <div class="row">

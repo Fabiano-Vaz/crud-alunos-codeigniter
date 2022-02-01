@@ -15,3 +15,7 @@ $(".dropify").dropify({
     error: "Ooops, algo errado aconteceu.",
   },
 });
+
+$("#foto_url").blur(function() {
+  $("#foto_base64").val($('.dropify-render img').attr('src'));
+});
