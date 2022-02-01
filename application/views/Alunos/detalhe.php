@@ -56,7 +56,7 @@
           </table>
         </div>
         <hr>
-        <div class="text-right">]
+        <div class="text-right">
           <!-- Botões de controles -->
           <?= anchor("Alunos/delete/" . $aluno['id'], "Deletar", array("class" => "btn btn-danger")) ?>
           <?= anchor("Alunos/editar", "Editar", array("class" => "btn btn-primary",  "data-toggle" => "modal", "data-target" => "#editModal")) ?>
