@@ -10,6 +10,15 @@ PARA ACESSAR CLIQUE NO LINK ABAIXO:
 
 ****Atenção, como estou utilizando um servidor gratuito, (infinityfree) o sistema está com baixo desempenho. Para melhor desempenho, recomendo fazer download e executar em uma maquina local, ou um servidor profissional.
 
+## GALERIA
+
+<p align="center">
+	<img src="https://raw.githubusercontent.com/Fabiano-Vaz/crud-alunos-codeigniter/main/public/img/print1.jpeg" width="350" title="Home">
+	<img src="https://raw.githubusercontent.com/Fabiano-Vaz/crud-alunos-codeigniter/main/public/img/print3.jpeg" width="350" title="Modal Edição">
+	<img src="https://raw.githubusercontent.com/Fabiano-Vaz/crud-alunos-codeigniter/main/public/img/print2.jpeg" width="350" title="Detalhes">
+	<img src="https://raw.githubusercontent.com/Fabiano-Vaz/crud-alunos-codeigniter/main/public/img/print4.jpeg" width="350" title="Modal Novo">
+	<img src="https://raw.githubusercontent.com/Fabiano-Vaz/crud-alunos-codeigniter/main/public/img/print5.jpeg" width="350" title="Modal Imagem">
+</p>
 
 ## INSTALAÇÃO
 
