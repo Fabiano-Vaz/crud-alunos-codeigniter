@@ -24,7 +24,7 @@
                 <div class="row">
                   <div class="col">
                     <!-- url da foto de perfil -->
-                    <input name="foto_url" id="foto_url" accept="image/jpeg" type="file" class="dropify" data-height="100" data-allowed-file-extensions="jpg jpeg"  />
+                    <input name="foto_url" id="foto_url" accept="image/jpeg" data-max-file-size="3M" type="file" class="dropify" data-height="100" data-allowed-file-extensions="jpg jpeg"  />
                   </div>
                 </div>
               </div>
