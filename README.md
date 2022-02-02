@@ -28,6 +28,44 @@ git pull
 
 ## BANCO DE DADOS:
 
+### Automatico (Incluso os INSERTs):
+
+Segue o link:
+[DATABASE.SQL](https://github.com/Fabiano-Vaz/crud-alunos-codeigniter/tree/main/public/db) 
+Também encontra-se localizado no diretório (crud-alunos-codeigniter/tree/main/public/db/database.sql) do projeto.
+
+Basta executar este arquivo em seu workbench, phpMyAdmin...(etc)
+
+Em seguida vc deve alterar a seguinte linha de código:
+
+(crud-alunos-codeigniter/application/config/database.php)
+```PHP
+$active_group = 'default';
+$db['default'] = array(
+	'dsn'	=> '',
+	'hostname' => 'localhost', //DEIXE O HOSTNAME COMO LOCALHOST
+	'username' => 'epiz_30951158',
+	'password' => 'cbVLSMPexjmruyW',
+	'database' => 'epiz_30951158_database',
+	'dbdriver' => 'mysqli',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
+```
+
+
+### Manual:
 Deverá ser cliado um banco de dados mySQL com uma tabela de "alunos". Para facilitar, use a instrução a seguir:
 
 ```SQL
@@ -38,11 +76,42 @@ CREATE TABLE `alunos` (
   `foto_base64` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 ```
+Após criado o banco, vc deve alterar o seguinte arquivo:
 
-Ou se preferir, pode apenas baixar o banco completo, segue o link:
-[DATABASE.SQL](https://github.com/Fabiano-Vaz/crud-alunos-codeigniter/tree/main/public/db) 
-Também encontra-se localizado no diretório (crud-alunos-codeigniter/tree/main/public/db/database.sql) do projeto.
+(crud-alunos-codeigniter/application/config/database.php)
+```PHP
+$active_group = 'default';
+$db['default'] = array(
+	'dsn'	=> '',
+	'hostname' => 'localhost',        //NOME DO SEU SERVIDOR LOCAL
+	'username' => 'usuario',          //SEU USUARIO
+	'password' => 'senha',            //SUA SENHA
+	'database' => 'squema',           //NOME DO SEU BANCO DE DADOS
+	'dbdriver' => 'mysqli',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
+```
 
+## URL DO SERVIDOR
+
+Altere a seguinte linha no arquivo de configurações do projeto para funcionar as rotas:
+
+(crud-alunos-codeigniter/application/config/config.php)
+```PHP
+$config['base_url'] = 'http://crud-alunos.42web.io/';
+```
 
 
 ### Links úteis e referências
