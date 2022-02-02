@@ -28,7 +28,7 @@ git pull
 
 ## BANCO DE DADOS:
 
-### Automatico (Incluso os INSERTs):
+### Instalação automática (Incluso os INSERTs):
 
 Segue o link:
 [DATABASE.SQL](https://github.com/Fabiano-Vaz/crud-alunos-codeigniter/tree/main/public/db) 
@@ -65,7 +65,7 @@ $db['default'] = array(
 ```
 
 
-### Manual:
+### Instalação manual:
 Deverá ser cliado um banco de dados mySQL com uma tabela de "alunos". Para facilitar, use a instrução a seguir:
 
 ```SQL
