@@ -24,7 +24,6 @@ git clone https://github.com/Fabiano-Vaz/crud-alunos-codeigniter.git
 Manter fonte local atualizado:
 ```
 git pull
-
 ```
 
 ## BANCO DE DADOS:
