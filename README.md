@@ -24,7 +24,7 @@ PARA ACESSAR CLIQUE NO LINK ABAIXO:
 
 #### Comandos do git
 
-Baixando o código do projeto:
+Baixando o código fonte do projeto:
 
 ```
 git clone https://github.com/Fabiano-Vaz/crud-alunos-codeigniter.git
