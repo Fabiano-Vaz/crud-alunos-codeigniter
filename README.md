@@ -52,7 +52,7 @@ Em seguida vc deve alterar a seguinte linha de código:
 $active_group = 'default';
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost', //DEIXE O HOSTNAME COMO LOCALHOST
+	'hostname' => 'localhost', //DEIXE O HOSTNAME COMO LOCALHOST OU COM O NOME DO SERVIDOR ONDE ESTA O BANCO
 	'username' => 'epiz_30951158',
 	'password' => 'cbVLSMPexjmruyW',
 	'database' => 'epiz_30951158_database',
